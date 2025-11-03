@@ -108,7 +108,7 @@ jobs:
 
     - name: Upload files
       if: github.event.inputs.RELEASE_TYPE == 'experimental'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v5
       with:
        name: Orange Fox Recovery for ${{ github.event.inputs.DEVICE_NAME }} ${{ env.BUILD_DATE }} Image
        path: |
